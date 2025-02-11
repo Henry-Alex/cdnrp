@@ -1,0 +1,381 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: mf;
+}
+
+@font-face {
+  font-family: mf;
+  src: url(ab.ttf);
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ifnooffice {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ifnoofficetop {
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.ifnoofficebottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 5vw;
+  justify-content: center;
+}
+
+.office {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 2vw;
+  padding-left: 5vw;
+}
+.soffice {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1vw;
+  padding-right: 5vw;
+}
+
+.stateoffice {
+  padding: 0.5vw 2.5vh;
+  background-color: #7fbb2e;
+  border-radius: 10000vw;
+  color: black;
+}
+
+.stateoffice:hover {
+  background-color: #9ed347;
+  cursor: pointer;
+}
+
+.costofoffice {
+  display: flex;
+  flex-direction: column;
+}
+
+.buyoffice {
+  background-color: #ffde2a;
+  padding: 0.5vw 2.5vh;
+  color: black;
+  border-radius: 10000vw;
+  margin-top: 1vw;
+  text-align: center;
+  font-size: 1.6vw;
+}
+
+.COO,
+.cost {
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.cost {
+  font-size: 2.6vw;
+}
+
+/* ----------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 6px; /* Thin scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fec219; /* Thumb color */
+  border-radius: 3px; /* Optional for rounded corners */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1313138a; /* Tracker color */
+}
+
+.statofficelist {
+  width: 100vw;
+  height: 100vh;
+}
+
+.listleft {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.allofficelist {
+  width: 80%;
+  height: 95%;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 1vw;
+}
+
+.officenamelist {
+  width: 100%;
+  height: 20%;
+  background-color: #fff;
+  border-radius: 1vw;
+  margin-bottom: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listownername {
+  color: #131313;
+  text-transform: uppercase;
+  font-size: 2.5vw;
+  padding-left: 1vw;
+}
+
+.listper {
+  color: #131313;
+  text-transform: uppercase;
+}
+
+.listper {
+  display: flex;
+  align-items: center;
+}
+
+.contractbtn {
+  padding: 0.5vw 2.5vh;
+  background-color: #7fbb2e;
+  border-radius: 10000vw;
+  color: black;
+}
+
+.listbtn {
+  display: flex;
+  gap: 1vw;
+  padding-right: 1vw;
+}
+/* --------------------------------------------- */
+
+.playerview {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pvtop {
+  width: 100vw;
+  height: 22vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pvstateoffice {
+  padding: 0.5vw 2.5vh;
+  background-color: #7fbb2e;
+  border-radius: 10000vw;
+  color: black;
+}
+
+.pvstateoffice:hover {
+  background-color: #9ed347;
+  cursor: pointer;
+}
+
+.pvname {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: mf;
+  font-size: 2.5vw;
+  padding-left: 2vw;
+}
+.pvbtn {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: mf;
+  padding-right: 2vw;
+}
+.pvmiddle {
+  width: 100vw;
+  height: 55vh;
+}
+
+.pvbottom {
+  width: 100vw;
+  height: 23vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-family: mf;
+}
+
+.pvtopinfo {
+  font-size: 1.1vw;
+}
+
+.pvtotalpro {
+  font-size: 2.1vw;
+}
+
+/* --------------------------------------------------------- */
+
+.toptask {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 1.5vw;
+}
+
+.task1 {
+  width: 30%;
+  height: 49%;
+  border-radius: 0.5vw;
+  /* border: rgba(255, 255, 255, 0.247) solid 0.1vw; */
+  background-color: rgba(255, 255, 255, 0.103);
+  /* padding: 1vw; */
+}
+
+.taskintop {
+  display: flex;
+  height: 35%;
+  align-items: center;
+  gap: 15vw;
+  padding-left: 2vw;
+}
+
+.taskno {
+  color: #fff;
+  font-family: mf;
+  font-size: 1.5vw;
+}
+
+.taskbtnm {
+  color: #fff;
+  font-family: mf;
+  font-size: 1vw;
+  border: solid 0.1vw #fec219;
+  padding: 0.5vw 2.2vw;
+  border-radius: 1000vw;
+}
+
+.tasknametodo {
+  color: #fff;
+  font-family: mf;
+  font-size: 1.2vw;
+  padding-left: 1.5vw;
+}
+/* ----------------------------- */
+
+.ownerview {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ownerbottom {
+  width: 100vw;
+  height: 23vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  color: #fff;
+  font-family: mf;
+}
+
+.officename {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.offname {
+  font-size: 1.5vw;
+  color: #fff;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-bottom: 1vh;
+}
+
+.changenamebtn {
+  color: #131313;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.herebtn {
+  padding: 2% 4%;
+  background-color: #fec219;
+  border-radius: 1000vw;
+}
+
+.changeproft {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+}
+
+.payedfor {
+  width: 30%;
+  height: 100%;
+}
+
+.payedfor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.chgproft,
+.history,
+.pay {
+  background-color: #7fbb2e;
+  padding: 2% 4%;
+}
