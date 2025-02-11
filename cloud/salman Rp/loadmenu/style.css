@@ -10,7 +10,7 @@ body {
   user-select: none;
   overflow: hidden;
   /* background: #151515; */
-  background-image: url(https://cdn.jsdelivr.net/gh/Henry-Alex/cdnrp@main/cloud/salman%20Rp/loadmenu/Reels.gif);
+  background-image: url(./Reels.gif);
   background-size: cover;
   background-position: center;
   font-family: "Inter", sans-serif;
