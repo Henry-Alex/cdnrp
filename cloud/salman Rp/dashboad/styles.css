@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: mf;
+  src: url(./assets/ab.ttf);
+}
+
+.mainc {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./bg.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.mainup {
+  /* background-color: grey; */
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.maindown {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.inventory {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(229, 148, 233, 0) 80%
+  );
+  height: 25vh;
+  width: 12%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.event {
+  border-radius: 3px;
+  background-color: #b1b1b175;
+  width: 12vw;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-family: mf;
+  cursor: pointer;
+}
+
+img {
+  width: 5vh;
+}
+h1 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 20px;
+  font-family: mf;
+  text-align: center;
+}
