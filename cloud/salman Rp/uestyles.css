@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: mf;
+  src: url(./ab.ttf);
+}
+
+.storerobbery{
+  background-image: url(./events/Store.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fibraid{
+  background-image: url(./events/FIB.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gangwar{
+  background-image: url(./events/Gang\ War.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.arcane{
+  background-image: url(./events/arcne.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.jailbreak{
+  background-image: url(./events/JAILBREAK.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.eventbg {
+  font-family: mf;
+  background: #070b11;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+  margin-bottom: 20px;
+  width: 50vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.header h1 {
+  font-size: 2vw;
+  text-transform: uppercase;
+}
+
+.header button {
+  background-color: #ffd700;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-right: 15px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  border-bottom: 2px solid #ffd700;
+}
+
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+  height: 100vh;
+  justify-content: center;
+}
+
+.event-carda {
+  background: #2c313a;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1 1 calc(25% - 20px); /* 4 cards per row */
+  max-width: calc(25% - 20px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.event-card {
+  width: 20vw;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 30vh;
+  /* max-width: calc(25% - 20px); */
+  flex: 1 1 calc(25% - 20px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.titleinfo {
+  align-self: flex-start;
+  padding-left: 1vw;
+  padding-top: 1vh;
+  font-size: 1.5vw;
+  text-transform: capitalize;
+}
+.timerinfo {
+  align-self: center;
+  background-color: white;
+  color: black;
+  border-radius: 0.5vw;
+  padding: 5px 5px 5px 5px;
+  width: 80%;
+  margin-bottom: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1vw;
+  text-transform: uppercase;
+}
