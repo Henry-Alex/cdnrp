@@ -120,6 +120,10 @@
   background-color: #710dfa;
   cursor: pointer;
 }
+.login-option:active {
+  background-color: #710dfa;
+  cursor: pointer;
+}
 
 .reg-option {
   width: 100%;
@@ -145,6 +149,10 @@
 }
 
 .reg-option:hover {
+  background-color: #710dfa;
+  cursor: pointer;
+}
+.reg-option:active {
   background-color: #710dfa;
   cursor: pointer;
 }
